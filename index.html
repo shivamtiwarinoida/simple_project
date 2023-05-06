@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <style>
+        .maini {
+            margin: 7rem auto;
+            background-image: linear-gradient(blue, red);
+            color: azure;
+            padding: 3rem;
+            text-align: center;
+            width: 80%;
+            border: 0.2rem solid blue;
+            border-radius: 0.6rem;
+            cursor: pointer;
+            overflow-wrap: break-word;
+            box-shadow: 0.7rem 0.7rem 0.8rem rgb(254, 2, 254);
+            font-size: 1.2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+    </style>
+    <title>Shiv s Page</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand"><a href="index.html">CodeJs</a></div>
+        <a href="#" class="toggle" onclick="func1()" id="work1">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </a>
+        <div class="navlist" id="work2">
+            <ul>
+                <li><a href="calc.html">Calc</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#"><button class="btnlogin" onclick="showlog()"><img src="css/user.png"></button></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="overlay" id="f2"></div>
+    <div class="loginf" id="f1">
+        <span onclick="remo()" id="cr1">&times;</span>
+        <form action="" class="form1">
+            <div class="attr he1"> <img src="css/user.png" alt="user"></div>
+            <div class="attr">
+                <label for="username">UserName</label>
+                <input type="text" placeholder="username" id="in1">
+            </div>
+            <div class="attr">
+                <label for="password">Password</label>
+                <input type="password" placeholder="password" id="in2">
+            </div>
+            <button class="btn" id="login1" onclick="submitt()">Login</button>
+        </form>
+    </div>
+    <div class="maini">
+        <h1>Welcome</h1>
+        <p>Welcome to our website! We're thrilled to have you here and hope you find everything you're looking for. Our
+            team has worked hard to create a user-friendly experience that provides you with all the information you
+            need. Whether you're here to learn, shop, or simply explore, we've got you covered. If you have any
+            questions or need assistance, please don't hesitate to reach out. Thank you for visiting, and we hope you
+            enjoy your time here!
+        </p>
+    </div>
+    <div class="foot">
+        made by shivam Tiwari . .
+        +91 8700636489 <span class="break1">shivamtiwariastudent@gmail.com</span>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

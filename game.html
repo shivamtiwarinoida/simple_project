@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/game.css">
+    <title>Shiv s Page</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand"><a href="index.html">CodeJs</a></div>
+        <a href="#" class="toggle" onclick="func1()" id="work1">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </a>
+        <div class="navlist" id="work2">
+            <ul>
+                <li><a href="calc.html">Calc</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#"><button class="btnlogin" onclick="showlog()"><img src="css/user.png"></button></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="overlay" id="f2"></div>
+    <div class="loginf" id="f1">
+        <span onclick="remo()" id="cr1">&times;</span>
+        <form action="" class="form1">
+            <div class="attr he1"> <img src="css/user.png" alt="user"></div>
+            <div class="attr">
+                <label for="username">UserName</label>
+                <input type="text" placeholder="username" id="in1">
+            </div>
+            <div class="attr">
+                <label for="password">Password</label>
+                <input type="password" placeholder="password" id="in2">
+            </div>
+            <button class="btn" id="login1" onclick="submitt()">Login</button>
+        </form>
+    </div>
+
+    <div class="headin">
+        Rock Paper Scissor
+    </div>
+
+    <div class="scoreboard">
+            <div class="sc">User</div>
+            <div class="sc2"><span id="user1">0</span>:<span id="comp1">0</span></div>
+            <div class="sc">Computer</div>
+    </div>
+    <div class="msg2" id="msg1">
+        it will have a message..
+    </div>
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="css/rock.png" alt="rock">
+        </div>
+        <div class="choice" id="p">
+            <img src="css/paper.png" alt="papper">
+        </div>
+        <div class="choice" id="s">
+            <img src="css/scissor.png" alt="scissor">
+        </div>
+    </div>
+    
+    <div class="msg">
+        Your Move Next..
+    </div>
+
+    <div class="foot">
+        made by shivam Tiwari . .
+        +91 8700636489 <span class="break1">shivamtiwariastudent@gmail.com</span>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

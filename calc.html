@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <style>
+        .headin {
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            margin-bottom: 5rem;
+            font-size: 1.5rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 0.8rem;
+        }
+
+        .headin:hover {
+            background-color: navy;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+    <title>Shiv s Page</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand"><a href="index.html">CodeJs</a></div>
+        <a href="#" class="toggle" onclick="func1()" id="work1">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </a>
+        <div class="navlist" id="work2">
+            <ul>
+                <li><a href="calc.html">Calc</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#"><button class="btnlogin" onclick="showlog()"><img src="css/user.png"
+                                alt=""></button></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="headin">Calculate Me
+    </div>
+    <div class="overlay" id="f2"></div>
+    <div class="loginf" id="f1">
+        <span onclick="remo()" id="cr1">&times;</span>
+        <form action="" class="form1">
+            <div class="attr he1"> <img src="css/user.png" alt="user"></div>
+            <div class="attr">
+                <label for="username">UserName</label>
+                <input type="text" placeholder="username" id="in1">
+            </div>
+            <div class="attr">
+                <label for="password">Password</label>
+                <input type="password" placeholder="password" id="in2">
+            </div>
+            <button class="btn" id="login1" onclick="submitt()">Login</button>
+        </form>
+    </div>
+
+    <div class="container ">
+        <div class="contain">
+            <div class="row">
+                <input type="text" class="input">
+            </div>
+            <div class="row ">
+                <button class="button">(</button>
+                <button class="button">)</button>
+                <button class="button">%</button>
+                <button class="button">E</button>
+            </div>
+            <div class="row ">
+                <button class="button">7</button>
+                <button class="button">8</button>
+                <button class="button">9</button>
+                <button class="button">*</button>
+            </div>
+
+            <div class="row ">
+                <button class="button">6</button>
+                <button class="button">5</button>
+                <button class="button">4</button>
+                <button class="button">/</button>
+            </div>
+
+            <div class="row ">
+                <button class="button">3</button>
+                <button class="button">2</button>
+                <button class="button">1</button>
+                <button class="button">+</button>
+            </div>
+
+            <div class="row ">
+                <button class="button">.</button>
+                <button class="button">0</button>
+                <button class="button">=</button>
+                <button class="button">-</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        made by shivam Tiwari . .
+        +91 8700636489 <span class="break1">shivamtiwariastudent@gmail.com</span>
+    </div>
+    <script src="js/calc.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

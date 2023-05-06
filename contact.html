@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/pop.css">
+    <title>Shiv s Page</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand"><a href="index.html">CodeJs</a></div>
+        <a href="#" class="toggle" onclick="func1()" id="work1">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </a>
+        <div class="navlist" id="work2">
+            <ul>
+                <li><a href="calc.html">Calc</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="btnlogin" onclick="showlog()"><img src="css/user.png"></button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="overlay" id="f2"></div>
+    <div class="loginf" id="f1">
+        <span onclick="remo()" id="cr1">&times;</span>
+        <form action="" class="form1">
+            <div class="attr he1"> <img src="css/user.png" alt="user"></div>
+            <div class="attr">
+                <label for="username">UserName</label>
+                <input type="text" placeholder="username" id="in1">
+            </div>
+            <div class="attr">
+                <label for="password">Password</label>
+                <input type="password" placeholder="password" id="in2">
+            </div>
+            <button class="btn" id="login1" onclick="submitt()">Submit</button>
+        </form>
+    </div>
+
+    <div class="maini">
+        <div class="contain">
+            <form action="">
+                <div class="row under">Contact Us</div>
+                <div class="row">
+                    <label for="Name">Name</label>
+                    <input type="text" placeholder="name" id="w11">
+                </div>
+                <div class="row">
+                    <label for="Phone No.">NUmber</label>
+                    <input type="text" placeholder="NUmber" id="w12">
+                </div>
+                <div class="row">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="email@gm.in" id="w13">
+                </div>
+                <div class="row">
+                    <label for="Suggestion">Suggest</label>
+                    <input type="text" id="su1">
+                </div>
+            </form>
+            <button class="btn" onclick="openp()" id="btn1">Submit</button>
+        </div>
+        <div class="popup" id="pop1">
+            <img src="css/check1.png">
+            <h2>Thank You!</h2>
+            <p>
+                Your details has been successfully submited . Thank you !
+            </p>
+            <button class="btn" onclick="closep()" id="btn2">OK</button>
+        </div>
+    </div>
+    <div class="foot">
+        made by shivam Tiwari . .
+        +91 8700636489 <span class="break1">shivamtiwariastudent@gmail.com</span>
+    </div>
+    <script>
+        let opp1 = document.getElementById('pop1');
+        let i = 0;
+        
+        let v1 = document.getElementById('f1');
+        let v2 = document.getElementById('f2');
+        
+        function func1() {
+            console.log("clicked");
+            const ele = document.getElementById('work2');
+            if (i % 2 == 0) {
+                ele.style.display = 'flex';
+                i++;
+            }
+            else {
+                ele.style.display = 'none';
+                i--;
+            }
+        }
+
+        let b1 = document.getElementById('btn1');
+
+        function closep() {
+            console.log("ok cicked");
+            opp1.classList.remove('openb');
+            opp1.classList.add('addt');
+            let w1 = document.getElementById('w11');
+            let w2 = document.getElementById('w12');
+            let w3 = document.getElementById('w13');
+            let w4 = document.getElementById('su1');
+
+            w1.value = "";
+            w2.value = "";
+            w3.value = "";
+            w4.value = "";
+        }
+
+        function openp() {
+            console.log("submit clicked");
+            opp1.classList.add('openb');
+            let w1 = document.getElementById('w11');
+            let w2 = document.getElementById('w12');
+            let w3 = document.getElementById('w13');
+            let w4 = document.getElementById('su');
+        }
+
+        function showlog() {
+            console.log("login clicked");
+            v1.classList.add('showlogin');
+            v2.classList.add('showover');
+        }
+
+        function remo() {
+            console.log("removed clicked");
+            v1.classList.remove('showlogin');
+            v2.classList.remove('showover');
+        }
+
+        function submitt() {
+            let us1 = document.getElementById('in1').value;
+            console.log(us1);
+            let us2 = document.getElementById('in2').value;
+            console.log(us2);
+            document.getElementById('in1').value = "";
+            document.getElementById('in2').value = "";
+            alert("Your UserName : " + us1);
+            remo();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+body{
+    box-sizing: border-box;
+}
+
+.maini{
+    margin: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.maini .btn{
+    background-color:black;
+    font-size: 1.4rem;
+    border: 0.2rem solid black;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    color: aliceblue;
+    box-shadow: 0.7rem 0.7rem 0.7rem rgb(252, 2, 252);
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.maini .btn:hover{
+    background-color: blue;
+    border:0.17rem solid blue;
+    font-size: 1.4rem;
+    box-shadow: 0.7rem 0.7rem 0.7rem aqua;
+}
+
+.popup{
+    width:400px;
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+    top:50%;
+    left:-80%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+    padding: 0 2rem 2rem;
+    color: #333;
+    transition: 2s;
+    box-shadow: 0.7rem 0.7rem 0.7rem rgb(252, 2, 252);
+}
+
+
+.openb{
+    left:50%;
+}
+
+.popup img{
+    width: 5rem;
+    margin-top: -50%;
+}
+
+.under{
+    text-decoration: underline;
+}
+
+
+.contain{
+    background-image:linear-gradient(navy,white);
+    border:0.2rem solid black;
+    box-shadow: 0.7rem 0.7rem 0.7rem rgb(251, 1, 251);
+    border-radius: 0.6rem;
+    padding: 2.4rem;
+    color:white;
+    font-size: 1.7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
+
+.row{
+    margin: 0.4rem;
+}
+
+.contain input{
+    width:100%;
+    padding:0.6rem;
+    border: 0.1rem solid black;
+    border-radius: 0.6rem;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#su1{
+    height: 70px;
+}
+
+@media (max-width:400px) {
+    .popup{
+        width: auto;
+    }
+
+    .maini{
+        width: auto;
+    }
+}
